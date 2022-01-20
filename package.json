@@ -1,0 +1,25 @@
+{
+  "name": "unit_test_validations_rating",
+  "private": true,
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/turbo-rails": "^7.1.1",
+    "@popperjs/core": "^2.11.2",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^7.0.1",
+    "@rails/request.js": "^0.0.6",
+    "@rails/ujs": "^7.0.1",
+    "@rails/webpacker": "4.3.0",
+    "bootstrap": "^5.1.3",
+    "esbuild": "^0.14.11",
+    "esbuild-rails": "^1.0.3",
+    "local-time": "^2.1.0",
+    "sass": "^1.49.0",
+    "trix": "^2.0.0-alpha.0",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^4.7.3"
+  }
+}
