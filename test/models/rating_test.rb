@@ -25,4 +25,21 @@ class RatingTest < ActiveSupport::TestCase
     rating.valid?
     assert_not rating.errors[:score].empty?
   end
+
+  test 'promoter? returns true if score is 9 or 10' do
+    9.upto(10).each do |i|
+      rating = Rating.new(score: i)
+      assert rating.promoter?
+    end
+  end
+
+  test 'promoter? returns false if score less than 9' do
+    rating = Rating.new(score: 1)
+    assert_not rating.promoter?
+  end
+
+  test 'promoter? returns false if score greater than 10' do
+    rating = Rating.new(score: 11)
+    assert_not rating.promoter?
+  end
 end
